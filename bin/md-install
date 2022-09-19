@@ -358,7 +358,8 @@ requireBackup "$specificationFile"
 hasPackageTypeForCommandLineTool=`doesFileContain "$specificationFile" 'com.apple.package-type.mach-o-executable'`
 hasProductTypeForCommandLineTool=`doesFileContain "$specificationFile" 'com.apple.product-type.tool'`
 
-macosxSDKSpecificationsPath=$macosSdkPlatformPath/Developer/Library/Xcode/Specifications
+# macosxSDKSpecificationsPath=$macosSdkPlatformPath/Developer/Library/Xcode/Specifications
+macosxSDKSpecificationsPath=/Applications/Xcode.app/Contents/PlugIns/XCBSpecifications.ideplugin/Contents/Resources
 packageTypesForMacOSXPath="$macosxSDKSpecificationsPath/MacOSX Package Types.xcspec"
 productTypesForMacOSXPath="$macosxSDKSpecificationsPath/MacOSX Product Types.xcspec"
 
